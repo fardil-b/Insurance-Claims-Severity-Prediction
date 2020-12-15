@@ -35,6 +35,7 @@ Allstate, an US-based insurance company is developing automated methods to predi
 ## Results<a name="results"></a>
 - The prediction using the test dataset was submitted on Kaggle and a score of 3011.62 was achieved which can be improved.
 - We were also successfully able to deploy the model and get prediction. But need to improve the model for greater accuracy.
+
 ![image](https://user-images.githubusercontent.com/61830624/102217579-1242e300-3edd-11eb-8e8d-3aa3aba87bb8.png)
 
 More information about the project and the main findings of the code can be found at the post available [here](https://fbhugaloo.medium.com/predicting-claims-severity-a-machine-learning-approach-e6744760d04c)
