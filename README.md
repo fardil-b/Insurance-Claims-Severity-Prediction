@@ -37,7 +37,7 @@ Allstate, an US-based insurance company is developing automated methods to predi
 - We were also successfully able to deploy the model and get prediction. But need to improve the model for greater accuracy.
 ![image](https://user-images.githubusercontent.com/61830624/102217579-1242e300-3edd-11eb-8e8d-3aa3aba87bb8.png)
 
-More information about the project and the main findings of the code can be found at the post available [here](https://fbhugaloo.medium.com/).
+More information about the project and the main findings of the code can be found at the post available [here](https://fbhugaloo.medium.com/https://fbhugaloo.medium.com/predicting-claims-severity-a-machine-learning-approach-e6744760d04c).
 
 ## Installation <a name="installation"></a>
 - To clone the repository use: git clone https://github.com/fardil-b/Insurance-Claims-Severity-Prediction.git
