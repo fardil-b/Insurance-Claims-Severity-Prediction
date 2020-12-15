@@ -15,7 +15,7 @@ def load_model():
     test_data_subset = pd.DataFrame.from_dict(json_normalize(req_data), orient='columns')
 
     # load the columns to drop file
-    columns_to_drop = pd.read_csv("/Users/fbhug/OneDrive/Desktop/claimsPrediction/columns_to_drop.csv")
+    columns_to_drop = pd.read_csv("/Insurance-Claims-Severity-Prediction/columns_to_drop.csv")
 
     # select the columns to be retained
     columns_to_Retain = set(test_data_subset.columns.values) - set(columns_to_drop.colnames.values)
@@ -27,7 +27,7 @@ def load_model():
 
     # read the label encoders and apply the encoded values to the categorical variables
     for cf1 in categorical_columns:
-        filename = "/Users/fbhug/OneDrive/Desktop/claimsPrediction/" + cf1 + ".sav"
+        filename = "/Insurance-Claims-Severity-Prediction/" + cf1 + ".sav"
         le = pickle.load(open(filename, 'rb'))
 
         # if an new classes is observed, set it to the 0 class
@@ -46,7 +46,7 @@ def load_model():
                                                                                                      copy=False)
 
     # load the saved model and predict on the test data
-    tuned_model = pickle.load(open("/claimsPrediction/tunedmodel_rf", 'rb'))
+    tuned_model = pickle.load(open("/Insurance-Claims-Severity-Prediction/tunedmodel_rf", 'rb'))
     Y_test_predict = tuned_model.predict(test_data_selected_columns)
 
     # create a new output dataframe
@@ -59,4 +59,4 @@ def load_model():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)  # run app in debug mode on port 4000
+    app.run(debug=True, port=4000)  # run app in debug mode on port 4000
