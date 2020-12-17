@@ -46,7 +46,7 @@ Using a dataset from Kaggle; provided by AllState, a US-based insurance company;
 - I was able to drop the number of features from 130 to 39 and I trained a ML algorithm which work quite was and was able to make prediction
 - The prediction using the test dataset was submitted on Kaggle and a score of 3011.62 was achieved which can be improved.
 
-More information about the project and the main findings of the code can be found at the post available [here](https://fbhugaloo.medium.com/predicting-claims-severity-a-machine-learning-approach-e6744760d04c)
+More information about the project and the main findings of the code can be found at the post available [here](https://fbhugaloo.medium.com/improving-insurance-claims-process-6c00c6ceef85)
 
 ## Installation <a name="installation"></a>
 - To clone the repository use: git clone https://github.com/fardil-b/Insurance-Claims-Severity-Prediction.git
