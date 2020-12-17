@@ -1,6 +1,5 @@
 # Insurance-Claims-Severity-Prediction
-How severe is an insurance claim?
-
+Focus on what matters and let go of what doesn't!
 
 ### Table of Contents
 
