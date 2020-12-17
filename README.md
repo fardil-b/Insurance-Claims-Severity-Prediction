@@ -23,7 +23,7 @@ Allstate, an US-based insurance company is developing automated methods to predi
 - Model deployment creating FlaskAPI
 
 ## File Descriptions <a name="files"></a>
-1. `Insurance_severity_claims.ipynb` : Notebook containing the whole project combined including EDA & Machine learning model
+1. `Insurance_Severity_Features.ipynb` : Notebook containing the whole project combined including EDA & Machine learning model
 2. `API` : folder containing 3 files : 
                    1. `claimsPrediction_model_API.py` : flask API code for deployment       
                    2. `columns_to_drop.csv`  : csv files containing features to be dropped and is used in the API file
