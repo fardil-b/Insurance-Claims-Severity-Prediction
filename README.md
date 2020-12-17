@@ -12,18 +12,29 @@ How severe is an insurance claim?
 5. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Project Motivation<a name="motivation"></a>
-Allstate, an US-based insurance company is developing automated methods to predict claims severity in order to provide better claims service for Allstate's customers. The goal is to build a model that can help Allstate to predict the severity of the claims accurately and  finally, create an API and deploy the model to generate the prediction at runtime. 
+
+In this project we are going to look at ways we can make the insurance claims process more efficient. Efficiencies in insurance claims severity analysis can help provide suitable insurance packages to customers and provide targeted assistance to better serve them. Finally, we would like to build a model that can predict severity of claims so as to improve the claims service to ensure a worry-free customer experience.
+
+Using a dataset from Kaggle; provided by AllState, a US-based insurance company; the training dataset consists of 130 attributes (features) and the loss value for each observation. The dataset contains 188,318 observations where each row represents an insurance claim. This means each claim is a process that requires 130 different information. So, the main questions are:
+
+1) Do we require all these attributes/information?
+2) Can we eliminate any of these attributes to be more efficient?
+  If yes, then:
+  - 2.1) which continuous variable are least important and can be dropped?
+  - 2.2) which categorical values is least important and can be dropped?
+3) Which attributes are most important for AllState?
+4) Finally, can we create an algorithm to predict claims severity?
 
 ## Methods Used <a name="method"></a>
 - Exploratory data analysis to understand the Allstate insurance claim dataset
 - Feature selection and elimination using Correlation, Constant Variance and Chi-Square statistical tests
+- Use PCA and Feature Importances to find the most important features
 - Understanding ensemble Machine Learning algorithms 
 - Hyper-parameter tuning using Scikit-Learn functions
 - Model selection using RMSE as the model evaluation metric
-- Model deployment creating FlaskAPI
 
 ## File Descriptions <a name="files"></a>
-1. `Insurance_Severity_Features.ipynb` : Notebook containing the whole project combined including EDA & Machine learning model
+1. `Insurance_severity_claims.ipynb` : Notebook containing the whole project combined including EDA & Machine learning model
 2. `API` : folder containing 3 files : 
                    1. `claimsPrediction_model_API.py` : flask API code for deployment       
                    2. `columns_to_drop.csv`  : csv files containing features to be dropped and is used in the API file
@@ -33,10 +44,8 @@ Allstate, an US-based insurance company is developing automated methods to predi
 
 
 ## Results<a name="results"></a>
+- I was able to drop the number of features from 130 to 39 and I trained a ML algorithm which work quite was and was able to make prediction
 - The prediction using the test dataset was submitted on Kaggle and a score of 3011.62 was achieved which can be improved.
-- We were also successfully able to deploy the model and get prediction. But need to improve the model for greater accuracy.
-
-![image](https://user-images.githubusercontent.com/61830624/102217579-1242e300-3edd-11eb-8e8d-3aa3aba87bb8.png)
 
 More information about the project and the main findings of the code can be found at the post available [here](https://fbhugaloo.medium.com/predicting-claims-severity-a-machine-learning-approach-e6744760d04c)
 
